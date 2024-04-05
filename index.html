@@ -75,6 +75,17 @@
                 alert("Kamu perlu isi jumlahnya yaa..!")
                 return
             }
+
+            // cari array 
+            let ketBuku = false;
+            for (let i = 0; i < buku.length; i++) {
+                if (buku[i].nama !== opsiBuku) {
+                    ketBuku = true;
+                    alert ("Buku tidak ditemukan")
+                    return
+                }
+
+            }
         }
 
     </script>
