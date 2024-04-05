@@ -70,6 +70,11 @@
             let jumlah = document.getElementById("jumlah").value;
             let opsiBuku = document.getElementById("opsiBuku").value;
 
+            // Cek apakah textfield jumlah yang diisi kosong?
+            if (jumlah === " ") {
+                alert("Kamu perlu isi jumlahnya yaa..!")
+                return
+            }
         }
 
     </script>
