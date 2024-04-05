@@ -85,6 +85,14 @@
                     return
                 }
 
+                // validasi jumlah
+                let stokBuku = buku[i].jumlah;
+
+                if (jumlah > stokBuku) {
+                    alert("jumlah buku tidak tersedia");
+                    return
+                }
+
             }
         }
 
