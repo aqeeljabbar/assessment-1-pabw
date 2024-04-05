@@ -73,7 +73,7 @@
             // Cek apakah textfield jumlah yang diisi kosong?
             if (jumlah === " ") {
                 alert("Kamu perlu isi jumlahnya yaa..!")
-                return
+                return;
             }
 
             // cari array 
@@ -82,7 +82,7 @@
                 if (buku[i].nama !== opsiBuku) {
                     ketBuku = true;
                     alert ("Buku tidak ditemukan")
-                    return
+                    return;
                 }
 
                 // validasi jumlah
@@ -90,15 +90,17 @@
 
                 if (jumlah > stokBuku) {
                     alert("jumlah buku tidak tersedia");
-                    return
+                    return;
                 }
 
                 if (jumlah <= stokBuku) {
                     alert("Silahkan ambil buku anda");
-                    return
+                    return;
                 }
 
             }
+
+        
         }
 
     </script>
